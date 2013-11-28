@@ -9,16 +9,16 @@ body {
     background-color:#191919;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
+    width:100%;
     height:100%;
     margin:0px;
     padding:0px;
-    width:100%;
     color:#FFFFFF; /*MAKE ORANGE*/
     text-align: center;
 }
 
 /* Portrait layout (default) */
-.app {}
+.app{}
 
 .app a.link-title{
 	display: block;
@@ -32,21 +32,4 @@ body {
     height: 560px;
     font-size: 24px;
     position:relative;
-}
-
-/* Landscape layout (with min-width) */
-@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
-    .app .test-zone{
-        height: 300px;
-    }
-}
-
-h1 {
-    font-size:18px;
-    font-weight:normal;
-    margin:0px;
-    overflow:visible;
-    padding:0;
-    text-align:center;
-    text-transform:uppercase;
 }
