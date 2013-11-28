@@ -18,14 +18,12 @@ body {
 }
 
 /* Portrait layout (default) */
-.app {
+.app {}
 
-}
-
-.app .logo{
-    width: 80%;
-    height: auto;
-    margin: 30px 0 20px 0;
+.app a.link-title{
+	display: block;
+    margin: 20px;
+	color: #FFF;
 }
 
 .app .test-zone{
@@ -38,13 +36,6 @@ body {
 
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
-    .app {
-        
-    }
-
-    .app .logo{
-        width: 70%;
-    }
     .app .test-zone{
         height: 300px;
     }
