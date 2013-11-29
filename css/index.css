@@ -6,30 +6,38 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#191919;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    font-size:12px;
-    width:100%;
-    height:100%;
+    font-size:100%;
     margin:0px;
     padding:0px;
-    color:#FFFFFF; /*MAKE ORANGE*/
-    text-align: center;
 }
-
+html, body {
+    width:100%;
+    height:100%;
+}
 /* Portrait layout (default) */
-.app{}
+.app{position:relative;width:100%;height:100%;}
 
-.app a.link-title{
-	display: block;
-    margin: 20px;
-	color: #FFF;
+.app .link-title{
+    position:relative;
+	width:100%;
+	height:50px;
+    text-align: center;
+	line-height: 50px;
+	color: #000;
+	background:#EEE;
 }
 
 .app .test-zone{
-    border: 1px solid #999;
-    margin: 20px;
-    height: 560px;
-    font-size: 24px;
-    position:relative;
+    position:absolute;
+	top:50px;
+	left:0;
+	right:0;
+	bottom:0;
+	height:auto;
+	padding: 20px;
+	background: #FFF;
+	color: #555;
+	overflow-y: scroll;
+	z-index: 10;
 }
